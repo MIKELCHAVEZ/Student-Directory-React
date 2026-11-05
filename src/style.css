@@ -1,0 +1,148 @@
+/* universal style */
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serift;
+}
+
+/* header styles */
+header{
+    padding: 10px 10px;
+    background-color: teal;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px aqua;
+    font-style: oblique;
+}
+
+header > h1{
+    font-size: 40px;
+    font-weight: bolder;
+     display: flex;
+    justify-content: center;
+}
+
+header > small{
+    font-size: medium;
+    font-weight: 100;
+     display: flex;
+    justify-content: center;
+}
+
+body{
+    padding: 20px;
+    margin: 20px;
+}
+/* form container */
+
+#formContainer{
+    padding: 20px 20px;
+    margin: 10px 10px;
+    box-shadow: 0px 4px 6px aqua;
+    border-radius: 30px;
+    background-color: teal;
+    font-style: oblique;  
+}
+
+#formContainer > #studentForm > .input-fields > input{
+padding: 10px 20px;
+border: 1px solid black;
+border-radius: 10px;
+flex: 1;
+}
+
+#formContainer > #studentForm > .input-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#formContainer > #studentForm > .input-fields > label{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#formContainer > #studentForm :last-child > button{
+    padding: 5px 10px;
+    background-color: aqua;
+    border-radius: 10px;
+    font-style: oblique;
+    margin-top: 10px;
+}
+
+
+/* Student list styles */
+
+#studentList > .list-item > button{
+    align-self: flex-start; 
+    background-color: #d10000;
+    color: #fef4ff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: small;
+    margin-bottom: 0;
+    transition: background-color 0.3s;
+}
+
+
+
+
+#studentList {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+#studentList > .list-item {
+    background-color: teal; 
+    padding: 15px 20px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-style: oblique;
+}
+
+#studentList > .list-item h2 {
+    color: black; 
+    font-size: large;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+#studentList > .list-item p {
+    color: #333;
+    font-size: medium;
+    margin-bottom: 10px;
+    font-style: oblique;
+}
+
+/*mobile*/
+@media (width <= 320px){
+    #studentList > .list-item{
+        grid-column: span 12;
+}
+}
+
+
+/* Tablet */
+@media (width > 320px) and (width <= 600px){
+    #studentList > .list-item{
+        grid-column: span 4;
+}
+}
+
+/*Desltop*/
+@media (width >= 1000px){
+    #studentList > .list-item{
+        grid-column: span 2;
+}
+}
+
