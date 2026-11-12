@@ -74,7 +74,7 @@ flex: 1;
 
 /* Student list styles */
 
-#studentList > .list-item > button{
+#StudentlistContainer> .list-item > button{
     align-self: flex-start; 
     background-color: #d10000;
     color: #fef4ff;
@@ -89,7 +89,7 @@ flex: 1;
 
 
 
-#studentList {
+#StudentlistContainer {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -99,7 +99,7 @@ flex: 1;
     gap: 10px;
 }
 
-#studentList > .list-item {
+#StudentlistContainer > .list-item {
     background-color: teal; 
     padding: 15px 20px;
     border-radius: 30px;
@@ -110,14 +110,14 @@ flex: 1;
     font-style: oblique;
 }
 
-#studentList > .list-item h2 {
+#StudentlistContainer > .list-item h2 {
     color: black; 
     font-size: large;
     font-weight: bold;
     font-style: oblique;
 }
 
-#studentList > .list-item p {
+#StudentlistContainer > .list-item p {
     color: #333;
     font-size: medium;
     margin-bottom: 10px;
@@ -126,7 +126,7 @@ flex: 1;
 
 /*mobile*/
 @media (width <= 320px){
-    #studentList > .list-item{
+    #StudentlistContainer > .list-item{
         grid-column: span 12;
 }
 }
@@ -134,14 +134,14 @@ flex: 1;
 
 /* Tablet */
 @media (width > 320px) and (width <= 600px){
-    #studentList > .list-item{
+    #StudentlistContainer > .list-item{
         grid-column: span 4;
 }
 }
 
 /*Desltop*/
 @media (width >= 1000px){
-    #studentList > .list-item{
+    #StudentlistContainer > .list-item{
         grid-column: span 2;
 }
 }

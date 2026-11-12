@@ -3,12 +3,12 @@ const FormContainer = () =>{
         <>
          <section id="formContainer">
         <form id="studentForm">
-            <div class="input-fields">
-                <label for="name">Student Name</label>
+            <div className="input-fields">
+                <label htmlFor="name">Student Name</label>
                 <input type="text" name="name" id="name"/>
             </div>
-            <div class="input-fields">
-                <label for="program">Program</label>
+            <div className="input-fields">
+                <label htmlFor="program">Program</label>
                 <input type="text" name="program" id="program"/>
             </div>
             <div>
